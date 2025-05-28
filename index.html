@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<title>vanyavicious mega canvas</title>
+<title>get a tattoo HERE</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <style>
   body {
@@ -11,6 +11,8 @@
     color: black;
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* чтобы гарантированно не было скролла */
+    width: 100vw; /* на всякий */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -24,9 +26,9 @@
     border-bottom: 2px solid black;
   }
   main {
- background-color: rgba(255,0,0,0.1); /*UDALIT POTOM*/
     flex-grow: 1;
-    padding: 1rem;
+    padding: 0;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     width: 100vw; 
@@ -38,7 +40,7 @@
      max-width: 1080px; /* но не больше 1080 пикселей */
      height: auto;      /* сохраняем пропорции */
      display: block;    /* убирает лишние отступы снизу */
-     margin: 0 auto;    /* по центру на больших экранах */
+     margin: 0;    /* по центру на больших экранах */
      box-shadow: 0 0 10px rgba(0,0,0,0.1);
      user-select: none;
      -webkit-user-drag: none;
@@ -56,7 +58,7 @@
 </style>
 </head>
 <body>
-  <header>vanyavicious(EXPERIMENTAL)</header>
+  <header>vanyavicious</header>
   <main>
     <img
       id="mega-canvas"
