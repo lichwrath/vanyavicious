@@ -24,10 +24,13 @@
     border-bottom: 2px solid black;
   }
   main {
+ background-color: rgba(255,0,0,0.1); /*UDALIT POTOM*/
     flex-grow: 1;
-    padding: 1rem 1rem 3rem;
+    padding: 1rem;
     display: flex;
     justify-content: center;
+    width: 100vw; 
+    overflow-x: hidden;
     max-width: 100vw;
   }
   img#mega-canvas {
@@ -37,8 +40,8 @@
      display: block;    /* убирает лишние отступы снизу */
      margin: 0 auto;    /* по центру на больших экранах */
      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  user-select: none;
-  -webkit-user-drag: none;
+     user-select: none;
+     -webkit-user-drag: none;
 }
   footer {
     text-align: center;
